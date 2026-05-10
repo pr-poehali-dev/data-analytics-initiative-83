@@ -54,16 +54,7 @@ export function Footer() {
                   +7 985 218 08 66
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Телеграм
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  ВКонтакте
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
