@@ -26,13 +26,6 @@ export function Hero() {
         if (newProgress >= 1) {
           setAnimationComplete(true)
         }
-
-        if (contentRef.current) {
-          const translateY = newProgress * 200
-          const rotationX = newProgress * 45
-          const scale = 1 - newProgress * 0.3
-          contentRef.current.style.transform = `translateY(${translateY}px) rotateX(${rotationX}deg) scale(${scale})`
-        }
       } else if (atTopOfPage && animationComplete && e.deltaY < 0) {
         e.preventDefault()
 
@@ -43,13 +36,6 @@ export function Hero() {
 
         if (newProgress < 1) {
           setAnimationComplete(false)
-        }
-
-        if (contentRef.current) {
-          const translateY = newProgress * 200
-          const rotationX = newProgress * 45
-          const scale = 1 - newProgress * 0.3
-          contentRef.current.style.transform = `translateY(${translateY}px) rotateX(${rotationX}deg) scale(${scale})`
         }
       }
     }
@@ -75,13 +61,6 @@ export function Hero() {
         if (newProgress >= 1) {
           setAnimationComplete(true)
         }
-
-        if (contentRef.current) {
-          const translateY = newProgress * 200
-          const rotationX = newProgress * 45
-          const scale = 1 - newProgress * 0.3
-          contentRef.current.style.transform = `translateY(${translateY}px) rotateX(${rotationX}deg) scale(${scale})`
-        }
       } else if (atTopOfPage && animationComplete && deltaY < 0) {
         e.preventDefault()
 
@@ -92,13 +71,6 @@ export function Hero() {
 
         if (newProgress < 1) {
           setAnimationComplete(false)
-        }
-
-        if (contentRef.current) {
-          const translateY = newProgress * 200
-          const rotationX = newProgress * 45
-          const scale = 1 - newProgress * 0.3
-          contentRef.current.style.transform = `translateY(${translateY}px) rotateX(${rotationX}deg) scale(${scale})`
         }
       }
 
@@ -129,12 +101,7 @@ export function Hero() {
       <div
         ref={contentRef}
         className="container mx-auto px-6 md:px-12 lg:pt-0 relative z-10 pb-0 pl-1 pr-1 pt-8 md:pt-0"
-        style={{
-          willChange: "transform",
-          transform: "translateY(0px)",
-          perspective: "1000px",
-          transformStyle: "preserve-3d",
-        }}
+        style={{}}
       >
         <div className="mb-72 md:mb-60 lg:mb-80">
           <p className="text-sm tracking-[0.3em] uppercase text-center text-secondary mb-0">{"Агрегатор строительных услуг"}</p>
