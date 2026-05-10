@@ -74,6 +74,12 @@ export function LeadForm() {
               >
                 {status === "loading" ? "Отправляем..." : "Отправить заявку"}
               </button>
+              <p className="text-xs text-muted-foreground">
+                Нажимая кнопку, вы соглашаетесь с{" "}
+                <a href="/terms" className="underline underline-offset-4 hover:text-foreground transition-colors">пользовательским соглашением</a>
+                {" "}и даёте{" "}
+                <a href="/privacy" className="underline underline-offset-4 hover:text-foreground transition-colors">согласие на обработку персональных данных</a>.
+              </p>
             </form>
           )}
         </div>
