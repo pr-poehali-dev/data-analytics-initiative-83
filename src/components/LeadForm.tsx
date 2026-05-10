@@ -35,7 +35,7 @@ export function LeadForm() {
         <div className="max-w-xl mx-auto text-center">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-4">Оставить заявку</p>
           <h2 className="text-4xl font-medium tracking-tight mb-4">
-            Управление вашей квартирой
+            Интересуетесь ремонтом или управлением вашей недвижимостью?
           </h2>
           <p className="text-muted-foreground mb-10">
             Оставьте имя и телефон — мы свяжемся и расскажем об условиях.
